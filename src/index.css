@@ -1,0 +1,16 @@
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+}
+
+.main-body {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+}
