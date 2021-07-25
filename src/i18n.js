@@ -3,6 +3,20 @@ import { initReactI18next } from 'react-i18next';
 
 import Backend from 'i18next-http-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
+import tr from './locales/tr';
+import en from './locales/en';
+
+const resources = {
+  en: {
+    translation: en
+  },
+  tr: {
+    translation: tr
+  },
+  'en-TR': {
+    translation: tr
+  }
+};
 // don't want to use this?
 // have a look at the Quick start guide 
 // for passing in lng and translations on init
@@ -20,6 +34,7 @@ i18n
   // init i18next
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
+    resources,
     fallbackLng: 'en',
     debug: true,
 
