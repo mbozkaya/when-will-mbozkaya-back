@@ -16,3 +16,197 @@ body {
     display: grid;
     grid-template-columns: 15% 70% 15%;
 }
+
+.site-header{
+    min-height: 64px;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+}
+
+.site-header-body{
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;  
+}
+
+.site-center-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.site-center-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.site-header-select{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-self: center;
+}
+
+.site-logo-image{
+  height: 40px;
+    width: 40px;
+}
+
+.site-text{
+  text-align: center;
+}
+
+
+
+
+
+.office-banner {
+    background-color: #e2ddd8;
+    font-family: "Arial";
+    padding: 0.125em;
+    font-size: 4em;
+    text-align: center;
+    white-space: nowrap;
+    transform: rotate(-10deg);
+    position: fixed;
+    top: 40%;
+    left: -5%;
+    right: -5%;
+    z-index: 100;
+    margin-top: 0;
+  }
+
+  #dogtag-body{
+    font-size: 150%;
+    font-family: Courier;
+    transform: scale(0.5);
+  }
+
+  #dogtag {
+    transform: rotate(
+        270deg
+        );
+    margin: auto;
+    width: 200px;
+    height: 350px;
+    background:#99a1a7;
+    border-radius: 150px / 70px;
+    position: relative;
+    border: 4px solid #5c5f62;
+    box-shadow: 5px 5px #222222;
+    box-sizing: border-box;
+  }
+  
+   #dogtag-hole {
+    position: absolute;
+    top: 10px;
+    left: 88px;
+    background-color: white;
+    width: 24px;
+    height: 24px;
+    border: 4px solid grey;
+    border-radius: 100%;
+    box-sizing: border-box;
+  }
+  
+  #information {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-top: 42px;
+    text-shadow: -1px -1px grey, 1px 1px grey;
+      color: #86898c;
+  }
+  
+  #name { 
+    margin: 0;
+    writing-mode: vertical-rl;
+  }
+  
+  #service-number { 
+    margin: 0;
+    writing-mode: vertical-rl;
+  }
+  
+  #blood-group-and-type { 
+    margin: 0;
+    writing-mode: vertical-rl;
+  }
+  
+  #religious-preference { 
+    margin: 0;
+    writing-mode: vertical-rl;
+  }
+
+
+  :root {
+    --select-border: #777;
+    --select-focus: blue;
+    --select-arrow: var(--select-border);
+  }
+  
+  select {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    padding: 0 1em 0 0;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+    z-index: 1;
+    
+    outline: none;
+  }
+
+  select::-ms-expand {
+    display: none;
+  }
+  
+  .select {
+    display: grid;
+    grid-template-areas: "select";
+    align-items: center;
+    position: relative;
+    width: 50px;
+    height: 30px;
+  
+    border: 1px solid var(--select-border);
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+  
+    font-size: 1.25rem;
+    cursor: pointer;
+    line-height: 1.1;
+  
+    background-color: #fff;
+    background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+  }
+
+  .select select,
+  ::after {
+    grid-area: select;
+  }
+
+  .select :not(.select--multiple)::after {
+    content: "";
+    justify-self: end;
+    width: 0.8em;
+    height: 0.5em;
+    background-color: var(--select-arrow);
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+  }
+  
+  select:focus + .focus {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    border: 2px solid var(--select-focus);
+    border-radius: inherit;
+  }
