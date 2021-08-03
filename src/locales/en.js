@@ -5,4 +5,10 @@ export default {
         "part2": "Switch language between english and german using buttons above."
     },
     'test': '{{myVar}} no danger ',
+    'turkish': 'Turkish',
+    'english': 'English',
+    'dawnCount': 'Last {{dawn}} day(s)',
+    'notStarted': 'The adventure will start on 7 August.',
+    'remainTime': 'Remain Time {{remainTime}}',
+    'finished': 'The adventure was completed :)',
 }

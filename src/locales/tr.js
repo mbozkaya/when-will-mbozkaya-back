@@ -4,5 +4,11 @@ export default {
         "part1": "To get started, edit <1>src/App.js</1> and save to reload.",
         "part2": "Switch language between english and german using buttons above."
     },
-    'test': 'Tehlike yok {{myVar}}'
+    'test': 'Tehlike yok {{myVar}}',
+    'turkish': 'Türkçe',
+    'english': 'İngilizce',
+    'dawnCount': 'Şafak {{dawn}}',
+    'notStarted': 'Serüven 7 Ağustosta başlayacak.',
+    'remainTime': 'Kalan süre {{remainTime}}',
+    'finished': 'Serüven tamamlandı :)',
 }
