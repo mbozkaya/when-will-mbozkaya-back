@@ -1,11 +1,25 @@
-import React, { createContext, useLayoutEffect, useRef, useState } from 'react';
+import React, { createContext, useEffect, useLayoutEffect, useRef, useState } from 'react';
 import confetti from 'canvas-confetti';
+import { useTranslation } from 'react-i18next';
+import { displayTime } from '../helpers/timeUtils';
 
 const MainContext = createContext();
 
 const MainContextProvider = (props) => {
+
+    const { t, i18n } = useTranslation();
     const { children } = props;
     const [showConfetti, setShowConfetti] = useState(false);
+    const [selectedLanguage, setSelectedLanguage] = useState(i18n.language);
+    let intervalId = useRef(null);
+    const [remainTime, setRemainTime] = useState({
+        time: 0,
+        day: 0,
+        hour: 0,
+        minute: 0,
+        second: 0,
+        formattedTime: '',
+    });
     const me = {
         firstname: 'Muhammet A.',
         lastname: 'Bozkaya',
@@ -17,15 +31,19 @@ const MainContextProvider = (props) => {
         militartServiceFinishAt: new Date(2021, 8, 7),
     };
 
-    useLayoutEffect(() => {
-        console.log('hitted');
-        setShowConfetti(true);
-        // setTimeout(() => {
-        //     setShowConfetti(false);
-        //     console.log('hitted again');
-        // }, 5 * 1000);
+    const calculateRemainTime = () => {
+        const time = (me.militartServiceFinishAt.getTime() - new Date().getTime()) / 1000;
+        const timeString = displayTime(time);
 
-    }, []);
+        setRemainTime({
+            time,
+            day: timeString.split(':')[0],
+            hour: timeString.split(':')[1],
+            minute: timeString.split(':')[2],
+            second: timeString.split(':')[3],
+            formattedTime: timeString,
+        });
+    }
 
 
     const fireworks = () => {
@@ -51,11 +69,26 @@ const MainContextProvider = (props) => {
         }, 250);
     };
 
+    useLayoutEffect(() => {
+        intervalId = setInterval(() => {
+            calculateRemainTime();
+        }, 1000);
+
+        return () => clearInterval(intervalId.current);
+    }, []);
+
+    useEffect(() => {
+        i18n.changeLanguage(selectedLanguage);
+    }, [selectedLanguage])
+
     return (
         <MainContext.Provider value={{
             showConfetti,
             fireworks,
-            me
+            me,
+            remainTime,
+            selectedLanguage,
+            setSelectedLanguage,
         }}>
             {children}
         </MainContext.Provider>
