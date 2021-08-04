@@ -11,4 +11,9 @@ export default {
     'notStarted': 'The adventure will start on 7 August.',
     'remainTime': 'Remain Time {{remainTime}}',
     'finished': 'The adventure was completed :)',
+    'sourceCode': 'Source code',
+    'birthday': 'Today is my birthday',
+    'leaveMessage': 'Today is my birthday. Let you leave a message that makes me happy!',
+    'salut': 'Hey there 👋',
+
 }

@@ -11,4 +11,9 @@ export default {
     'notStarted': 'Serüven 7 Ağustosta başlayacak.',
     'remainTime': 'Kalan süre {{remainTime}}',
     'finished': 'Serüven tamamlandı :)',
+    'sourceCode': 'Kaynak kodu',
+    'birthday': 'Bugün benim yaş günüm',
+    'leaveMessage': 'Beni mutlu edecek bir mesaj bırakmaya ne dersin!',
+    'salut': 'Selam ve hoşgeldin 👋',
+
 }
