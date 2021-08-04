@@ -1,14 +1,19 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { MainContext } from '../contexts/MainContext';
 import LanguageSelect from './LanguageSelect';
 
 const Header = () => {
     const { t } = useTranslation();
-    const { remainTime, me } = useContext(MainContext);
+    const { remainTime, me, selectedLanguage } = useContext(MainContext);
 
     const dawn = parseInt(remainTime.day) + 1;
     const now = new Date();
+
+    useEffect(() => {
+        document.title = t('dawnCount', { dawn });
+    }, [remainTime.day, selectedLanguage]);
+
     return (
         <header className="site-header">
             <div />
