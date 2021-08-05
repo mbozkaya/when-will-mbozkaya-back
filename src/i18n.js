@@ -16,8 +16,11 @@ const resources = {
   'en-TR': {
     translation: tr
   },
-  'en-US':{
+  'en-US': {
     translation: en
+  },
+  'tr-TR': {
+    translation: tr
   }
 };
 // don't want to use this?
