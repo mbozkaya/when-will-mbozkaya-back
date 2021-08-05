@@ -2,12 +2,12 @@ import React from 'react';
 import Disqus from 'disqus-react';
 
 const Comment = ()=>{
-
-    const disqusShortname = "when-will-mbozkaya-back"
+  
+    const disqusShortname = process.env.REACT_APP_SHORT_NAME;
     const disqusConfig = {
-      url: "http://localhost:3000",
-      identifier: "home page",
-      title: "Title of Your Article"
+      url: "http://whenwillmbozkayaback.com",
+      identifier: "When will mbozkaya back",
+      title: "Leave a comment"
     }
     return(
         <Disqus.DiscussionEmbed
