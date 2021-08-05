@@ -9,7 +9,7 @@ const Footer = () => {
         <footer className="footer">
             <div />
             <div className="site-center-item">
-                <p className="text-center"><a href="https://mbozkaya.github.io" target="_blank">mbozkaya</a> © 2021 - {new Date().getFullYear()} <a href="https://mbozkaya.github.io" target="_blank">{t('sourceCode')}</a></p>
+                <p className="text-center"><a href="https://mbozkaya.github.io" target="_blank">mbozkaya</a> © 2021 - {new Date().getFullYear()} <a href="https://github.com/mbozkaya/when-will-mbozkaya-back" target="_blank">{t('sourceCode')}</a></p>
             </div>
             <div />
         </footer>
