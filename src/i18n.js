@@ -15,6 +15,9 @@ const resources = {
   },
   'en-TR': {
     translation: tr
+  },
+  'en-US':{
+    translation: en
   }
 };
 // don't want to use this?
