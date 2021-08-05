@@ -26,12 +26,12 @@ const Header = () => {
                 <div className="site-header-body">
                     {me.militartServiceFinishAt < now ? (
                         <>
-                            <h3 className="site-text">{me.militartServiceStartAt < now ? t('dawnCount', { dawn }) : t('finished')}</h3>
+                            <h3 className="site-text">{t('finished')}</h3>
                         </>
                     ) : (
                         <>
                             <h3 className="site-text">{me.militartServiceStartAt < now ? t('dawnCount', { dawn }) : t('notStarted')}</h3>
-                            <span className="site-text">{me.militartServiceStartAt < now ? remainTime.formattedTime : null}</span>
+                            {/* <span className="site-text">{me.militartServiceStartAt < now ? remainTime.formattedTime : null}</span> */}
                         </>
                     )}
 

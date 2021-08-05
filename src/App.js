@@ -5,11 +5,13 @@ import { useTranslation } from 'react-i18next';
 import { MainContext } from './contexts/MainContext';
 import Comment from './components/Comment';
 import Birthday from './components/Birthday';
+import Counter from './components/Counter';
 
 const App = () => {
     const { t, i18n } = useTranslation();
     const { showConfetti, fireworks, me } = useContext(MainContext);
     const [showBirthday, setShowBirthday] = useState(false);
+    const now = new Date();
 
     useState(() => {
         const now = new Date();
@@ -27,6 +29,13 @@ const App = () => {
             <main className="main-body">
                 <div />
                 <div className="site-content" >
+                    {
+                        me.militartServiceStartAt > now || me.militartServiceFinishAt < now
+                            ? null :
+                            (<div className="site-counter">
+                                <Counter />
+                            </div>)
+                    }
                     <div>
                         <h3>{t('salut')}</h3>
                         <p>{t('me')}</p>
