@@ -18,6 +18,15 @@ export default {
     'me': 'I\'m Muhammet',
     'info': 'The adventure of military duty which is take 30 days will start on 7 August. I wanted to make a page to see who wonder about when will I come back.',
     'leaveComment': 'So, If you want to make me happy, you can leave a comment below.',
-    'love': 'With love'
+    'love': 'With love',
+    'countdown': 'Countdown to my come back',
+    'day': 'day',
+    'days': 'days',
+    'hour': 'hour',
+    'hours': 'hours',
+    'minute': 'minute',
+    'minutes': 'minutes',
+    'second': 'second',
+    'seconds': 'seconds',
 
 }

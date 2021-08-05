@@ -18,5 +18,14 @@ export default {
     'me': 'Ben Muhammet',
     'info': '7 Ağustos\'ta 30 gün sürecek olan askerlik serüvenim başlıyor. Bu süre içerisinde ne zaman geri döneceğimi merak edenler için böyle bir sayfa yapmak istedim.',
     'leaveComment': 'Buraya kadar gelmişken aşağıya okuduğumda beni mutlu edecek bir yorum bırakabilirsin',
-    'love': 'Sevgiler'
+    'love': 'Sevgiler',
+    'countdown': 'Geri dönüşüme kalan süre',
+    'day': 'gün',
+    'days': 'gün',
+    'hour': 'saat',
+    'hours': 'saat',
+    'minute': 'dakika',
+    'minutes': 'dakika',
+    'second': 'saniye',
+    'seconds': 'saniye',
 }
