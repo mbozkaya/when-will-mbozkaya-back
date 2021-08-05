@@ -1,0 +1,30 @@
+{
+    "short_name": "whenwillmbozkayaback",
+    "name": "When will mbozkaya back",
+    "icons": [
+      {
+        "src": "/images/military_16x16.png",
+        "sizes": "16x16",
+        "type": "image/png"
+      },
+      {
+        "src": "/images/military_24x24.png",
+        "sizes": "24x24",
+        "type": "image/png"
+      },
+      {
+        "src": "/images/military_32x32.png",
+        "sizes": "32x32",
+        "type": "image/png"
+      },
+      {
+        "src": "/images/military_64x64.png",
+        "sizes": "64x64",
+        "type": "image/png"
+      }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+  }
