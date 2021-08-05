@@ -15,5 +15,8 @@ export default {
     'birthday': 'Bugün benim yaş günüm',
     'leaveMessage': 'Beni mutlu edecek bir mesaj bırakmaya ne dersin!',
     'salut': 'Selam ve hoşgeldin 👋',
-
+    'me': 'Ben Muhammet',
+    'info': '7 Ağustos\'ta 30 gün sürecek olan askerlik serüvenim başlıyor. Bu süre içerisinde ne zaman geri döneceğimi merak edenler için böyle bir sayfa yapmak istedim.',
+    'leaveComment': 'Buraya kadar gelmişken aşağıya okuduğumda beni mutlu edecek bir yorum bırakabilirsin',
+    'love': 'Sevgiler'
 }
