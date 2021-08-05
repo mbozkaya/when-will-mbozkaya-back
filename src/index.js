@@ -7,11 +7,9 @@ import { MainContextProvider } from './contexts/MainContext';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Suspense fallback="loading">
-      <MainContextProvider>
-        <App />
-      </MainContextProvider>
-    </Suspense>
+    <MainContextProvider>
+      <App />
+    </MainContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
