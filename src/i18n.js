@@ -21,6 +21,9 @@ const resources = {
   },
   'tr-TR': {
     translation: tr
+  },
+  'en-GB':{
+    translation: en
   }
 };
 // don't want to use this?
@@ -40,6 +43,7 @@ i18n
   // init i18next
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
+    lng: 'en',
     resources,
     fallbackLng: 'en',
     debug: true,
