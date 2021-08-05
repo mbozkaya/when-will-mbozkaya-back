@@ -54,6 +54,10 @@ body {
     width: 40px;
 }
 
+.site-logo-image:hover{
+  transform: scale(1.5);
+}
+
 .site-text{
   text-align: center;
 }
@@ -61,7 +65,7 @@ body {
 .site-content{
   display: grid;
   grid-template-rows: auto;
-  gap: 10px;
+  gap: 50px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
