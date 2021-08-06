@@ -74,9 +74,12 @@ const MainContextProvider = (props) => {
             calculateRemainTime();
         }, 1000);
 
-        if (remainTime.day < 3) {
-            fireworks();
-        }
+        setTimeout(() => {
+            if (remainTime.day < 3) {
+                fireworks();
+            }
+        }, 1000 * 3);
+
         return () => clearInterval(intervalId.current);
     }, []);
 

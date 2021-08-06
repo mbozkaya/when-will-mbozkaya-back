@@ -4,4 +4,4 @@
 
  when-will-mbozkaya-back page is a info page to show people that I'm going to military duty and they who want to wonder when will I come back can see my remain day.
 
- You can access live preview [here](whenwillmbozkayaback.com)!
+ You can access live preview [here](https://whenwillmbozkayaback.com/)!
