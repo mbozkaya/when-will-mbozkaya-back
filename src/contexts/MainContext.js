@@ -27,7 +27,7 @@ const MainContextProvider = (props) => {
         identityNumber: '1904*******',
         bloodGroup: 'A rh+',
         religion: '-',
-        militartServiceStartAt: new Date(2021, 7, 7),
+        militartServiceStartAt: new Date(2021, 7, 6, 20),
         militartServiceFinishAt: new Date(2021, 8, 4),
     };
 
@@ -78,7 +78,6 @@ const MainContextProvider = (props) => {
     }, []);
 
     useEffect(() => {
-        debugger;
         if (remainTime.day !== 0 && remainTime.day < 3) {
             if (remainTime.day < 3) {
                 fireworks();
