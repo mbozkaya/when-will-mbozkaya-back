@@ -74,14 +74,17 @@ const MainContextProvider = (props) => {
             calculateRemainTime();
         }, 1000);
 
-        setTimeout(() => {
+        return () => clearInterval(intervalId.current);
+    }, []);
+
+    useEffect(() => {
+        debugger;
+        if (remainTime.day !== 0 && remainTime.day < 3) {
             if (remainTime.day < 3) {
                 fireworks();
             }
-        }, 1000 * 3);
-
-        return () => clearInterval(intervalId.current);
-    }, []);
+        }
+    }, [remainTime.day])
 
     useEffect(() => {
         i18n.changeLanguage(selectedLanguage);
