@@ -31,7 +31,6 @@ const Header = () => {
                     ) : (
                         <>
                             <h3 className="site-text">{me.militartServiceStartAt < now ? t('dawnCount', { dawn }) : t('notStarted')}</h3>
-                            {/* <span className="site-text">{me.militartServiceStartAt < now ? remainTime.formattedTime : null}</span> */}
                         </>
                     )}
 

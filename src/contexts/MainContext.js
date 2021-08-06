@@ -28,7 +28,7 @@ const MainContextProvider = (props) => {
         bloodGroup: 'A rh+',
         religion: '-',
         militartServiceStartAt: new Date(2021, 7, 7),
-        militartServiceFinishAt: new Date(2021, 8, 7),
+        militartServiceFinishAt: new Date(2021, 8, 4),
     };
 
     const calculateRemainTime = () => {
