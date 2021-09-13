@@ -11,7 +11,11 @@ const Header = () => {
     const now = new Date();
 
     useEffect(() => {
-        document.title = t('dawnCount', { dawn });
+        if (remainTime.day > 0) {
+            document.title = t('dawnCount', { dawn });
+        } else {
+            document.title = t('finished');
+        }
     }, [remainTime.day, selectedLanguage]);
 
     return (
